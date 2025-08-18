@@ -1,0 +1,51 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ #adminmenumain{
+    display:none;
+}
+
+body.admin-bar #wpcontent, body.admin-bar #adminmenu { padding-top: 0px !important;  }
+ #wpadminbar,#wpfooter{
+     display: none !important;
+ }
+.folded #wpcontent,.folded #wpfooter{
+    margin-left: 0px !important;
+ }
+ #xseeb-root{
+    width: 100%; 
+    height: 100vh !important; 
+    background-color:#ffffff !important;
+ }
+ #xseeb-loader{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ #xseeb-root .arco-page-header{
+     padding-left: 10px !important;
+ }
+ #xseeb-root .arco-page-header-head-wrapper{
+    padding-left: 0px;
+ }
+ html.wp-toolbar{
+    padding-top:0px !important;
+ }
+.folded #adminmenuback, .folded #adminmenuwrap, .folded #adminmenu, .folded #adminmenu li.menu-top {
+    display: none;
+    width: 0px !important;
+}
+.folded #wpcontent #wpbody-content{
+    padding-bottom:0px;
+}
+body.admin-bar #wpcontent{
+    padding-left: 0px;
+    margin-left: 0px !important;
+}
+#wpbody-content{
+    padding-bottom:0px;
+}

@@ -1,0 +1,382 @@
+.error{
+    outline: 1px solid red;
+}
+.xseeb-col-button {
+    width:380px;
+    float: left;
+    
+}
+.xseeb-button-main{
+    display: inline-block;
+    width: 160px
+}
+.xseeb-button-main p.submit{
+    margin: 0px;
+    padding-bottom: 0px;
+}
+#xseeb_name,#xseeb_email{
+    width: 335px;
+}
+.xs-send-email-notice{
+  display: none;
+}
+.xs-notice-dismiss{
+  display:none;
+}
+.xseeb-send-mail{
+    font-size: 15px !important;
+    font-family: bold;
+    padding: 2px 15px !important;
+}
+
+body{
+  background:#F0F0F1;
+}
+h1{
+    font-size:2em;
+}
+h2, h3 {
+    font-size: 1.3em;
+}
+.xseeb-license-title {
+    margin: 0.5em 0;
+}
+.xseeb-post {
+    margin: 15px 10px 15px 0;
+}
+.xseeb-license-page {
+  /*background-color: #ffffff;
+  min-height: 600px;
+  border-radius: 4px;
+  border: 1px solid #dddd;*/
+  padding: 80px 20px 30px;
+  margin: auto;
+}
+.xseeb-license-container {
+  width: 100%;
+  margin: auto;
+}
+.xseeb-license-header {
+  margin: auto;
+  text-align: center;
+}
+.xseeb-license-header img {
+  margin-bottom: 20px;
+}
+.xseeb-license-page p {
+  text-align: center;
+  line-height: 24px;
+  letter-spacing: .87px;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 13px;
+  margin: 10px 0;
+  color: #999;
+}
+.xseeb-license-page h3 {
+  text-align: center;
+  line-height: 40px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 32px;
+  margin: 10px 0;
+}
+/*xseeb form*/
+.xseeb-license-form {
+    max-width: 470px;
+    margin: 35px auto 0;
+}
+.xseeb-license-input-group input {
+  height: 44px;
+  border: 1px solid #ced4da;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.xseeb-license-input-group input:focus {
+  box-shadow: none;
+  border-color: #2fbb1c;
+}
+.xseeb-license-page .xseeb-license-input-with--icon input:focus + .input-group-text{
+    border-color: #2fbb1c;
+} 
+.xseeb-license-input-group>.form-control:not(:last-child),
+.input-group .form-control:not(:first-child):not(:last-child) {
+  border-radius: .25rem;
+}
+#xseeb-delete-button,#xseeb-verify-code,.xseeb-verify-btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  background-color: #2fbb1c;
+  color: #ffffff;
+  border-color: #2fbb1c;
+}
+#xseeb-delete-button:focus,
+#xseeb-verify-code:focus,
+.xseeb-verify-btn:focus {
+  box-shadow: none;
+  border-color: #2fbb1c;
+}
+#xseeb-delete-button,
+.xseeb-verify-btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.xseeb-license-page .xseeb-license-input-with--icon {
+    flex-wrap: wrap;
+}
+.xseeb-license-page .xseeb-license-input-with--icon .form-control {
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+
+}
+.xseeb-license-page .xseeb-license-input-with--icon .input-group-text {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: .375rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-right: 0px;
+  background-color: #f9f9f9;
+}
+.xseeb-license-input-with--icon .input-group-text:before {
+  content: "\2714";
+  font-family: VC-Icons!important;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 18px;
+  color: #2fbb1c;
+}
+.xseeb-delete-txt {
+  display: block;
+  width: 100%;
+  line-height: 24px;
+  letter-spacing: .87px;
+  font-weight: 500;
+  font-size: 12px;
+  margin: 5px 0 0;
+  color: #495057;
+}
+.xseeb-license-notice{
+    display: none;
+}
+#xseeb-delete-button:hover,#xseeb-verify-code:hover,.xseeb-verify-btn:hover {
+  background-color: #50ce3b;
+  border-color: #50ce3b;
+}
+/*xseeb timeline*/
+.xseeb-timeline {
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  max-width: 660px;
+  margin: 40px auto;
+  padding: 0;
+  list-style-type: none;
+  color: #a7a7a7;
+
+}
+.xseeb-timeline-item {
+    width: 33.33%;
+}
+.xseeb-timeline-item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  padding: 0;
+  text-align: center;
+  font-family: Roboto,sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+.xseeb-timeline-item-helper {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 0 0 32px;
+  -ms-flex: 0 0 32px;
+  flex: 0 0 32px;
+  height: 32px;
+  width: 32px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  border: 2px solid #a7a7a7;
+  color: #a7a7a7;
+}
+
+.xseeb-step-done .xseeb-timeline-item-helper {
+  font-size: 0;
+  border-color: #2fbb1c;
+  background: #2fbb1c;
+}
+
+.xseeb-timeline-item.xseeb-step-done:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  margin: 0 10px;
+  background: #a7a7a7;
+  top: 16px;
+  right: calc(-50% + 16px);
+  left: calc(50% + 16px);
+}
+.xseeb-timeline-item.xseeb-step-done:after {
+  background: #2fbb1c;
+}
+.xseeb-step-done .xseeb-timeline-item-helper:before {
+  content: "\2714";
+  font-family: VC-Icons!important;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 12px;
+  color: #fff;
+}
+
+/*xseeb modal*/
+.xseeb-license-modal .modal-header,
+.xseeb-license-modal .modal-footer {
+  border: none;
+}
+.xseeb-license-modal .modal-footer {
+  padding: 1.2rem 1rem;
+}
+.xseeb-license-modal .modal-footer button {
+  min-width: 80px;
+}
+.xseeb-license-modal .modal-header i {
+  color: orange;
+}
+.xseeb-license-modal .modal-dialog-centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: calc(100% - (.5rem * 2));
+}
+.xseeb-license-modal .modal-content {
+  width: 100%;
+}
+.xseeb_spinner{
+    float: right;
+  margin: 0;
+  opacity: 1;
+  height: 30px;
+  display: none;
+  background-position-x: center;
+  background-position-y: center;
+  
+}
+.xseeb-license-spinner {
+  margin-left: 5px;
+  margin-top: 8px; 
+}
+.xseeb_is_active{
+    display:inline-block;
+    visibility:visible;
+    opacity:1
+}
+.xseeb-license-notice .notice-dismiss{
+    padding-top: 15px;
+    display: none; 
+}
+.xseeb-top-margin{
+    margin-top: 20px !important; 
+}
+.xseeb-mail-spinner{
+    margin-top: 38px ;
+}
+html {
+  scroll-padding-top: 50px;
+}
+/*============================================================  
+                    Mobile First Method  
+ =============================================================*/
+@media only screen and (min-width: 768px) {
+  .xseeb-timeline {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .xseeb-timeline-item:last-child { flex-grow: 0; }
+  .xseeb-timeline-item {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    width: auto;
+  }
+  .xseeb-timeline-item-helper {
+    margin: 0 10px 0 0;
+  }
+  .xseeb-timeline-item-text {
+    white-space: nowrap;
+  }
+  .xseeb-timeline-item.xseeb-step-done:after {
+    position: relative;
+    width: 100%;
+    top: auto;
+    right: auto;
+    left: auto;
+  }
+}

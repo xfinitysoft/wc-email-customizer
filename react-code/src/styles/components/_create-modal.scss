@@ -1,0 +1,174 @@
+.create-template-modal {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	opacity: 0;
+	transition: all 0.1s ease;
+	visibility: hidden;
+	z-index: 9999;
+	.create-modal-active & {
+		opacity: 1;
+		visibility: visible;
+	}
+	.create-modal-overlay {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.7);
+		backdrop-filter: blur(10px);
+		z-index: 5;
+	}
+
+	&__wrap {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		padding: 35px 25px;
+	}
+
+	&__holder {
+		position: relative;
+		max-width: 1300px;
+		width: 100%;
+		background: #f5f4f9;
+		overflow: hidden;
+		border-radius: 20px;
+		z-index: 6;
+	}
+
+	&__heading-area {
+		position: relative;
+		background: #fff;
+		padding: 20px 0 0;
+	}
+
+	&__heading {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 80px 8px 25px;
+	}
+
+	&__title {
+		font-size: 24px;
+		line-height: 1.2;
+		font-weight: 600;
+		color: #000;
+		display: block;
+
+		.no {
+			position: relative;
+			font-size: 22px;
+			color: rgba(#000, 0.4);
+		}
+	}
+}
+.create-template-modal.create-modal-active{
+	opacity: 1;
+	visibility: visible;
+}
+.template-tabs-area {
+	position: relative;
+}
+
+.template-tabs-list {
+	position: relative;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0 -5px;
+
+	&__item {
+		position: relative;
+		padding: 0 5px;
+	}
+
+	&__link {
+		font-size: 15px;
+		line-height: 18px;
+		font-weight: 600;
+		position: relative;
+		display: block;
+		transition: all 0.4s ease;
+		padding: 4px 25px 14px;
+		text-decoration: none;
+		color: rgba(#000, 0.4);
+
+		&:before {
+			background: #2d69cd;
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 0;
+			transition: all 0.4s ease;
+			height: 3px;
+		}
+
+		&:hover {
+			color: #000;
+		}
+
+		&.active {
+			color: #000;
+
+			&:before {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.template-tabs-content {
+	position: relative;
+	padding: 22px 0;
+
+	&__wrap {
+		position: relative;
+		padding: 0 5px;
+	}
+
+	&__holder {
+		position: relative;
+		max-height: calc(100vh - 210px);
+		overflow: auto;
+		padding: 0 25px;
+	}
+}
+.template-tabs-content .cart-item-block{
+	cursor: pointer;
+}
+.template-tabs-content__holder {
+	-ms-overflow-style: none;
+	scrollbar-width: thin;
+	scrollbar-color: #74747c transparent;
+}
+
+.template-tabs-content__holder::-webkit-scrollbar {
+	width: 4px;
+}
+
+.template-tabs-content__holder::-webkit-scrollbar-track {
+	background: #f5f4f9;
+}
+
+.template-tabs-content__holder::-webkit-scrollbar-thumb {
+	background: #74747c;
+}
+.xs-no-template {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
