@@ -32,6 +32,7 @@ define( 'XSEEB_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
  * The code that runs during plugin activation.
  * This action is documented in includes/class-xseeb-activator.php
  */
+
 function xseeb_activate() {
 	if ( ! is_plugin_active( 'woocommerce/woocommerce.php' ) ) {
 		deactivate_plugins( plugin_basename( __FILE__ ) );
