@@ -1,0 +1,169 @@
+.confirmation-modal {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.1s ease;
+	z-index: 101;
+	.confirm-modal-overlay {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.7);
+		backdrop-filter: blur(10px);
+		z-index: 5;
+	}
+
+	&__wrap {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		padding: 30px 25px;
+		overflow: auto;
+	}
+
+	&__holder {
+		position: relative;
+		max-width: 480px;
+		width: 100%;
+		background: #fff;
+		padding: 30px 15px;
+		border-radius: 15px;
+		z-index: 6;
+	}
+
+	.modal-close {
+		right: 15px;
+		top: 15px;
+		font-size: 13px;
+		cursor: pointer;
+	}
+
+	&__content {
+		position: relative;
+		max-width: 400px;
+		padding: 12px 0 0;
+		text-align: center;
+		font-size: 15px;
+		line-height: 24px;
+		margin: 0 auto;
+	}
+
+	&__title {
+		font-size: 22px;
+		line-height: 1.2;
+		font-weight: 600;
+		color: #000;
+		display: block;
+		margin: 0 0 8px;
+	}
+
+	p {
+		color: rgba(#000, 0.6);
+		padding: 0 10px;
+		margin: 0 0 20px;
+	}
+
+	.modal-btn {
+		height: 45px;
+	}
+}
+.confirmation-modal.confirm-modal-active{
+	opacity: 1;
+	visibility: visible;
+}
+/* Item Confirmation Modal */
+.item-confirmation-modal {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.1s ease;
+	z-index: 101;
+
+	.item-confirm-modal-active & {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.item-confirm-modal-overlay {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.7);
+		backdrop-filter: blur(10px);
+		z-index: 5;
+	}
+
+	&__wrap {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		padding: 30px 25px;
+		overflow: auto;
+	}
+
+	&__holder {
+		position: relative;
+		max-width: 480px;
+		width: 100%;
+		background: #fff;
+		padding: 30px 15px;
+		border-radius: 15px;
+		z-index: 6;
+	}
+
+	.modal-close {
+		right: 15px;
+		top: 15px;
+		font-size: 13px;
+		cursor: pointer;
+	}
+
+	&__content {
+		position: relative;
+		max-width: 400px;
+		padding: 12px 0 0;
+		text-align: center;
+		font-size: 15px;
+		line-height: 24px;
+		margin: 0 auto;
+	}
+
+	&__title {
+		font-size: 22px;
+		line-height: 1.2;
+		font-weight: 600;
+		color: #000;
+		display: block;
+		margin: 0 0 8px;
+	}
+
+	p {
+		color: rgba(#000, 0.6);
+		padding: 0 10px;
+		margin: 0 0 20px;
+	}
+
+	.modal-btn {
+		height: 45px;
+	}
+}

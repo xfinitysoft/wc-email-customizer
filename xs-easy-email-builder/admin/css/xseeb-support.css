@@ -1,0 +1,30 @@
+.error{
+    outline: 1px solid red;
+}
+.xseeb-col-button {
+    width:380px;
+    float: left;
+    
+}
+.xseeb-button-main{
+    display: inline-block;
+    width: 160px
+}
+.xseeb-button-main p.submit{
+    margin: 0px;
+    padding-bottom: 0px;
+}
+#xseeb_name,#xseeb_email{
+    width: 335px;
+}
+.xs-send-email-notice{
+  display: none;
+}
+.xs-notice-dismiss{
+  display:none;
+}
+.xseeb-send-mail{
+    font-size: 15px !important;
+    font-family: bold;
+    padding: 2px 15px !important;
+}

@@ -1,0 +1,125 @@
+.heading-block {
+    position: relative;
+    background: #fff;
+    padding: 10px 0;
+
+    @media screen and (max-width: 1700px) {
+        padding: 7px 0;
+    }
+
+    &__wrap {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__info {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__btn-wrap {
+        display: block;
+    }
+
+    .upgrade-btn {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 600;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background: #fba26e;
+        color: #fff;
+        text-decoration: none;
+        transition: all 0.4s ease;
+        border-radius: 10px;
+        padding: 7px 16px;
+
+        @media screen and (max-width: 1700px) {
+            padding: 6px 16px;
+        }
+
+        .icon {
+            position: relative;
+            display: block;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #fff;
+            color: #fba26e;
+            text-align: center;
+            margin: 0 8px 0 0;
+
+            i {
+                font-size: 10px;
+                line-height: 24px;
+                position: relative;
+            }
+        }
+
+        .text {
+            display: block;
+        }
+    }
+
+    &__link-wrap {
+        display: block;
+        padding: 0 0 0 20px;
+    }
+
+    &__link {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 600;
+        display: block;
+        position: relative;
+        text-decoration: none;
+        color: #000;
+
+        &:hover {
+            color: #fba26e;
+        }
+    }
+}
+
+.template-info-area {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &__btn-wrap {
+        display: flex;
+        padding: 0 0 0 12px;
+    }
+
+    &__create-btn {
+        background: linear-gradient(to right, rgba(46, 104, 203, 1) 0%, rgba(108, 103, 203, 1) 21%, rgba(164, 104, 204, 1) 100%);
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 600;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        color: #fff !important;
+        text-decoration: none;
+        transition: all 0.4s ease;
+        border-radius: 10px;
+        padding: 5px 16px 7px;
+        height: 36px;
+        margin: 0px 5px;
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+# Git exclude rules (this file is not hidden — OK for WordPress.org Plugin Check).
+# Wire Git once from this plugin folder (repository root must be this folder):
+#   npm run setup-git-ignore
+# or: git config core.excludesFile gitignore
+
+email-builder/node_modules
+email-builder/dist
+email-builder/.env.development.local
+email-builder/plugin-deploy.config.json

@@ -1,0 +1,295 @@
+import React from 'react';
+import {Background,RadioGroupField,Padding,TextField,AttributesPanelWrapper,InputWithUnitField,ColorPickerField,Color,BorderWidth,BorderColor,Align,LineHeight,FontSize} from 'easy-email-extensions';
+import { Collapse,Grid,Space} from '@arco-design/web-react';
+import { useFocusIdx,TextStyle} from 'easy-email-editor';
+const options = [
+    {
+      value: 'left',
+      label: 'left',
+    },
+    {
+      value: 'center',
+      label: 'center',
+    },
+    {
+      value: 'right',
+      label: 'right',
+    },
+  ];
+export function OrderDetailPanel(){
+    const { focusIdx } = useFocusIdx();
+    return(
+        <AttributesPanelWrapper>
+            <Collapse defaultActiveKey={['1']}>
+                <Collapse.Item name='1' header='Content'>
+                    <Space direction='vertical'>
+                        <Grid.Row>
+                            <Grid.Col span={24}>
+                                <TextField
+                                label='Product'
+                                name={`${focusIdx}.data.value.product`}
+                                />
+                            </Grid.Col>
+                        </Grid.Row>
+                        <Grid.Row>
+                            <Grid.Col span={24}>
+                                <TextField
+                                label='Quantity'
+                                name={`${focusIdx}.data.value.quantity`}
+                                />
+                            </Grid.Col>
+                        </Grid.Row>
+                        <Grid.Row>
+                            <Grid.Col span={24}>
+                                <TextField
+                                label='Price'
+                                name={`${focusIdx}.data.value.price`}
+                                />
+                            </Grid.Col>
+                        </Grid.Row>
+                    </Space>
+                </Collapse.Item>
+                <Collapse.Item name='2' header="Table header style">
+                    <Space direction='vertical'>
+                        <Grid.Row>
+                            <Grid.Col span={24}>
+                            <ColorPickerField
+                                label='Heading color'
+                                name={`${focusIdx}.attributes.h-color`}
+                            />
+                            </Grid.Col>
+                        </Grid.Row>
+                        <Grid.Row>
+                            <Grid.Col span={24}>
+                            <ColorPickerField
+                                label='Heading bg color'
+                                name={`${focusIdx}.attributes.hbg-color`}
+                            />
+                            </Grid.Col>
+                        </Grid.Row>
+                        <Grid.Row>
+                            <Grid.Col span={24}>
+                            <ColorPickerField
+                                label='Heading radius color'
+                                name={`${focusIdx}.attributes.h-border-color`}
+                            />
+                            </Grid.Col>
+                        </Grid.Row>
+                        <Grid.Row>
+                            <Grid.Col span={24}>
+                            <InputWithUnitField 
+                                label='Header Top radius'
+                                name={`${focusIdx}.attributes.ht-radius`}
+                            />
+                            </Grid.Col>
+                        </Grid.Row>
+                        <Grid.Row>
+                            <Grid.Col span={24}>
+                            <InputWithUnitField 
+                                label='Header border width'
+                                name={`${focusIdx}.attributes.h-border-width`}
+                            />
+                            </Grid.Col>
+                        </Grid.Row>
+                        <Grid.Row>
+                            <Grid.Col span={24}>
+                            <ColorPickerField
+                                label='Header border color'
+                                name={`${focusIdx}.attributes.h-border-color`}
+                            />
+                            </Grid.Col>
+                        </Grid.Row>
+                    </Space>
+                    <Space direction='vertical'>
+                        <TextStyle variation='strong'>{`Padding(px)`}</TextStyle>
+                        <Grid.Row>
+                            <Grid.Col span={11}>
+                                <InputWithUnitField label='Top' name={`${focusIdx}.attributes.ht-padding`} />
+                            </Grid.Col>
+                            <Grid.Col offset={1} span={11}>
+                                <InputWithUnitField label='Left' name={`${focusIdx}.attributes.hl-padding`} />
+                            </Grid.Col>
+                        </Grid.Row>
+                        <Grid.Row>
+                            <Grid.Col span={11}>
+                            <InputWithUnitField label='Bottom' name={`${focusIdx}.attributes.hb-padding`}/>
+                            </Grid.Col>
+                            <Grid.Col offset={1} span={11}>
+                            <InputWithUnitField label='Right' name={`${focusIdx}.attributes.hr-padding`} />
+                            </Grid.Col>
+                        </Grid.Row>
+                    </Space>
+                </Collapse.Item>
+                <Collapse.Item name='3' header="Table Body style">
+                    <Space direction='vertical'>
+                        <Grid.Row>
+                            <Grid.Col span={11}>
+                                <Color></Color>
+                            </Grid.Col>
+                        </Grid.Row>
+                        <Grid.Row>
+                                <TextStyle variation='strong'>{'Border'}</TextStyle>
+                        </Grid.Row>
+                        <Grid.Row>
+                            <Grid.Col span={11}>
+                                <BorderWidth/>
+                            </Grid.Col>
+                            <Grid.Col offset={2} span={11}>
+                                <BorderColor/>
+                            </Grid.Col>
+                        </Grid.Row>
+                    </Space>
+                    <Space direction='vertical'>
+                        <Grid.Row>
+                            <TextStyle variation='strong'>{`Product Description Padding`}</TextStyle>
+                        </Grid.Row>
+                        <Grid.Row>
+                            <Grid.Col span={11}>
+                                <InputWithUnitField label='Top' name={`${focusIdx}.attributes.ptext-tpadding`} />
+                            </Grid.Col>
+                            <Grid.Col offset={1} span={11}>
+                                <InputWithUnitField label='Left' name={`${focusIdx}.attributes.ptext-lpadding`} />
+                            </Grid.Col>
+                        </Grid.Row>
+                        <Grid.Row>
+                            <Grid.Col span={11}>
+                            <InputWithUnitField label='Bottom' name={`${focusIdx}.attributes.ptext-bpadding`}/>
+                            </Grid.Col>
+                            <Grid.Col offset={1} span={11}>
+                            <InputWithUnitField label='Right' name={`${focusIdx}.attributes.ptext-rpadding`} />
+                            </Grid.Col>
+                        </Grid.Row>
+                    </Space>
+                    <Space direction='vertical'>
+                        <Grid.Row>
+                            <TextStyle variation='strong'>{`Quantity Style`}</TextStyle>
+                        </Grid.Row>
+                        <Grid.Row>
+                            <Grid.Col span={11}>
+                                <ColorPickerField
+                                    label='Color'
+                                    name={`${focusIdx}.attributes.bquantity-color`}
+                                />
+                            </Grid.Col>
+                        </Grid.Row>
+                        <Grid.Row>
+                            <Grid.Col span={11}>
+                                <InputWithUnitField 
+                                    label='Font Size'
+                                    name={`${focusIdx}.attributes.bquantity-fontsize`}
+                                />
+                            </Grid.Col>
+                            <Grid.Col offset={2} span={11}>
+                                <InputWithUnitField 
+                                    label='Font Weight'
+                                    name={`${focusIdx}.attributes.bquantity-fontweight`}
+                                />
+                            </Grid.Col>
+                        </Grid.Row>
+                    </Space>
+                    <Space direction='vertical'>
+                        <Grid.Row>
+                            <TextStyle variation='strong'>{`Price Style`}</TextStyle>
+                        </Grid.Row>
+                        <Grid.Row>
+                            <Grid.Col span={11}>
+                                <ColorPickerField
+                                    label='Color'
+                                    name={`${focusIdx}.attributes.bprice-color`}
+                                />
+                            </Grid.Col>
+                        </Grid.Row>
+                        <Grid.Row>
+                            <Grid.Col span={11}>
+                                <InputWithUnitField 
+                                    label='Font Size'
+                                    name={`${focusIdx}.attributes.bprice-fontsize`}
+                                />
+                            </Grid.Col>
+                            <Grid.Col offset={2} span={11}>
+                                <InputWithUnitField 
+                                    label='Font Weight'
+                                    name={`${focusIdx}.attributes.bprice-fontweight`}
+                                />
+                            </Grid.Col>
+                        </Grid.Row>
+                    </Space>
+                    <Space direction='vertical'>
+                        <Grid.Row>
+                            <TextStyle variation='strong'>{`Padding(px)`}</TextStyle>
+                        </Grid.Row>
+                        <Grid.Row>
+                            <Grid.Col span={11}>
+                                <InputWithUnitField label='Top' name={`${focusIdx}.attributes.bt-padding`} />
+                            </Grid.Col>
+                            <Grid.Col offset={1} span={11}>
+                                <InputWithUnitField label='Left' name={`${focusIdx}.attributes.bl-padding`} />
+                            </Grid.Col>
+                        </Grid.Row>
+                        <Grid.Row>
+                            <Grid.Col span={11}>
+                            <InputWithUnitField label='Bottom' name={`${focusIdx}.attributes.bb-padding`}/>
+                            </Grid.Col>
+                            <Grid.Col offset={1} span={11}>
+                            <InputWithUnitField label='Right' name={`${focusIdx}.attributes.br-padding`} />
+                            </Grid.Col>
+                        </Grid.Row>
+                    </Space>
+                </Collapse.Item>
+                <Collapse.Item name='4' header="style">
+                    <Space direction='vertical'>
+                        <Grid.Row>
+                            <Grid.Col span={24}>
+                                <TextField
+                                label='Last column width (%)'
+                                name={`${focusIdx}.data.value.width`}
+                                />
+                            </Grid.Col>
+                        </Grid.Row>
+                        <Grid.Row>
+                            <RadioGroupField
+                                label='First Column Align'
+                                name={`${focusIdx}.attributes.firstcolumn-align`}
+                                options={options}
+                            />
+                        </Grid.Row>
+                        <Grid.Row>
+                            <RadioGroupField
+                                label='Second Column Align'
+                                name={`${focusIdx}.attributes.Secondcolumn-align`}
+                                options={options}
+                            />
+                        </Grid.Row>
+                        <Grid.Row>
+                            <RadioGroupField
+                                label='Third Column Align'
+                                name={`${focusIdx}.attributes.Thirdcolumn-align`}
+                                options={options}
+                            />
+                        </Grid.Row>
+                    </Space>
+                    <Space direction='vertical'>
+                        <Grid.Row>
+                            <Grid.Col span={11}>
+                                <FontSize></FontSize>
+                            </Grid.Col>
+                        </Grid.Row>
+                        <Grid.Row>
+                            <Grid.Col span={11}>
+                                <LineHeight></LineHeight>
+                            </Grid.Col>
+                        </Grid.Row>
+                    </Space>
+                    <Space direction='vertical'>
+                        <Padding title="Padding(px)"/>
+                    </Space>
+                    <Space direction='vertical'>
+                        <Background/>
+                    </Space>
+                </Collapse.Item>
+            </Collapse>
+        </AttributesPanelWrapper>
+    );
+
+
+}

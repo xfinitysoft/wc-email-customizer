@@ -1,0 +1,11 @@
+{
+  "name": "xs-easy-email-builder",
+  "private": true,
+  "description": "Delegates to email-builder/ (same pattern as wp-voucher-creator root package.json).",
+  "scripts": {
+    "start": "npm --prefix email-builder run start",
+    "build": "npm --prefix email-builder run build",
+    "install-app": "npm install --legacy-peer-deps --prefix email-builder",
+    "setup-git-ignore": "git config core.excludesFile gitignore"
+  }
+}
